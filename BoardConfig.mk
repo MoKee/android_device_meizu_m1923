@@ -28,6 +28,9 @@ SOONG_CONFIG_MEIZU_SM6150_LIGHT_MX_LED_PATH := /sys/class/leds/mx-led
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Releasetools
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
