@@ -22,5 +22,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vendor_fstab.qcom:$(TARGET_COPY_OUT_SYSTEM)/etc/vendor_fstab.qcom
 
+# Touch
+PRODUCT_PACKAGES += \
+    mokee.touch@1.0-service.m1923
+
 # Inherit from sm6150-common
 $(call inherit-product, device/meizu/sm6150-common/common.mk)
